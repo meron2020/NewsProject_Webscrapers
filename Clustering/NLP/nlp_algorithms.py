@@ -1,8 +1,8 @@
 from scipy import spatial
 import advertools as adv
 from sklearn.feature_extraction.text import TfidfVectorizer
-from flask_app.Backend.Databases.DatabaseHandlers.database_handler_orchestrator import DatabaseHandlerOrchestrator
-from flask_app.Backend.Webscraping.HebrewMorphologyEngine.morphology_engine import HebrewMorphologyEngine
+from Databases.DatabaseHandlers.database_handler_orchestrator import DatabaseHandlerOrchestrator
+from Webscraping.HebrewMorphologyEngine.morphology_engine import HebrewMorphologyEngine
 
 hebrew_stoplist = adv.stopwords['hebrew']
 

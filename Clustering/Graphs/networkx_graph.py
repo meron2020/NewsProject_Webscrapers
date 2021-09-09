@@ -6,8 +6,8 @@ import networkx as nx
 import networkx.algorithms.components as nac
 from googleapiclient import discovery
 
-from flask_app.Backend.Clustering.NLP.nlp_algorithms import NLPProcessor
-from flask_app.Backend.Databases.DatabaseHandlers.database_handler_orchestrator import DatabaseHandlerOrchestrator
+from Clustering.NLP.nlp_algorithms import NLPProcessor
+from Databases.DatabaseHandlers.database_handler_orchestrator import DatabaseHandlerOrchestrator
 import pika
 import pandas as pd
 
@@ -48,7 +48,6 @@ class GraphConnections:
             self.create_NLP()
             nx_graph = self.create_graph()
             self.update_cluster_ids(nx_graph)
-            self.channel.stop_consuming()
         return
 
     def create_graph(self):

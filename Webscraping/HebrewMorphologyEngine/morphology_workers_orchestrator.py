@@ -1,5 +1,5 @@
 import threading
-from flask_app.Backend.Webscraping.HebrewMorphologyEngine.morphology_engine_worker import MorphologyEngineWorker
+from Webscraping.HebrewMorphologyEngine.morphology_engine_worker import MorphologyEngineWorker
 
 
 class MorphologyWorkersOrchestrator:

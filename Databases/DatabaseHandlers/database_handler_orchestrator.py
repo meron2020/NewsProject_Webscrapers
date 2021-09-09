@@ -1,6 +1,6 @@
-from flask_app.Backend.Databases.DatabaseHandlers.database_handler import DatabaseHandler
+from Databases.DatabaseHandlers.database_handler import DatabaseHandler
 import sqlite3
-from flask_app.Backend.Databases.DatabaseHandlers.cache_database_handler import CacheDatabaseHandler
+from Databases.DatabaseHandlers.cache_database_handler import CacheDatabaseHandler
 
 
 class DatabaseHandlerOrchestrator:

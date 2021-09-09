@@ -2,7 +2,7 @@ import sqlite3
 import pika
 import json
 import random
-from flask_app.Backend.Databases.DatabaseHandlers.queue_publisher import QueuePublisher
+from Databases.DatabaseHandlers.queue_publisher import QueuePublisher
 # from flask_app.Backend.Models.article import Article
 # from flask_app.Backend.Models.score import Score
 from ..PostgreSQL.postgresql_connection import PostgresConnection
